@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Life Hospital - HOME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./Home.css">
+</head>
+<body>
+    <nav>
+        <section id="LogoSection">
+            <h2><i class="fas fa-hospital"></i> The Life Hospital</h2>
+            <p>Best In the City</p>
+        </section>
+        <div id="SearchSection">
+            <input type="text" placeholder="Search doctors, services...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <ul id="NavMenu">
+            <li><button><i class="fas fa-blog"></i> Blogs</button></li>
+            <li><button><i class="fas fa-bell"></i> Notifications</button></li>
+            <li><button><i class="fas fa-user"></i> Account</button></li>
+        </ul>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+    <main>
+      <aside id="sidebar">
+            <a href="../Home/Home.html" class="active"><i class="fas fa-Patient"></i> Home</a>
+            <a href="../Doctors/Doctors.html"><i class="fas fa-user-md"></i> Doctor</a>
+            <a href="../Disease/Disease.html"><i class="fas fa-stethoscope"></i> Diseases</a>
+            <a href="../Patients/Patient.html"><i class="fas fa-users"></i> Patients</a>
+            <a href="../About/About.html"><i class="fas fa-info-circle"></i> About Us</a>
+        </aside>
+
+        <div id="mainContent">
+            <div id="Intro">
+                <h1>Excellence in Healthcare</h1>
+                <p>Providing comprehensive medical care with state-of-the-art facilities and experienced professionals dedicated to your health and well-being.</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Expert Doctors</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50k+</span>
+                        <span class="stat-label">Happy Patients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Emergency Care</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Cardiac Care</h3>
+                    <p>Advanced cardiac treatment with cutting-edge technology and experienced cardiologists providing comprehensive heart care services.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Neurology</h3>
+                    <p>Expert neurological care for brain and nervous system disorders with state-of-the-art diagnostic and treatment facilities.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Pediatric Care</h3>
+                    <p>Specialized healthcare for children with child-friendly environment and pediatric specialists ensuring the best care for your little ones.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h3>Emergency Services</h3>
+                    <p>Round-the-clock emergency medical services with rapid response team and fully equipped emergency department.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <h3>Diagnostic Imaging</h3>
+                    <p>Advanced imaging services including MRI, CT scans, and ultrasound with latest technology for accurate diagnosis.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3>Pharmacy</h3>
+                    <p>In-house pharmacy with comprehensive medication services and expert pharmacist consultation for your convenience.</p>
+                </div>
+            </div>
+
+            <section>
+                <h2 style="text-align: center; color: #2c5aa0; margin-bottom: 2rem;">Our Specialized Services</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <i class="fas fa-microscope"></i>
+                        <h4>Laboratory Services</h4>
+                        <p>Comprehensive lab testing</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-cut"></i>
+                        <h4>Surgical Services</h4>
+                        <p>Advanced surgical procedures</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-tooth"></i>
+                        <h4>Dental Care</h4>
+                        <p>Complete dental health</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-eye"></i>
+                        <h4>Ophthalmology</h4>
+                        <p>Eye care specialists</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-bone"></i>
+                        <h4>Orthopedics</h4>
+                        <p>Bone and joint care</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-lungs"></i>
+                        <h4>Pulmonology</h4>
+                        <p>Respiratory care</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 The Life Hospital. All rights reserved. | Excellence in Healthcare Since 1995</p>
+        </footer>
+    </main>
+
+    <script src="./Home.js" ></script>
+</body>
+</html>
